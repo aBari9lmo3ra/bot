@@ -7,8 +7,8 @@ from openai import OpenAI
 
 
 client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    base_url="https://openrouter.ai/google/gemini-2.0-flash-exp:free",
+    api_key = os.getenv("OPENROUTER_API_KEY")
 )
 
 load_dotenv()
